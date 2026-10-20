@@ -29,7 +29,7 @@ El presupuesto no es un consejo financiero: es un dato de práctica que tú elig
 3. Si Android Studio te pregunta si confías en el proyecto, confirma solo porque es tu carpeta de trabajo.
 4. Espera a **Gradle Sync**. Si no empieza: **File > Sync Project with Gradle Files**.
 5. En **Settings > Build, Execution, Deployment > Build Tools > Gradle**, usa el **JDK integrado de Android Studio (jbr)**. No cambies a un Java antiguo instalado por otro programa.
-6. En la rama Version_panda2 conserva AGP 9.1.1, Gradle 9.3.1 y compileSdk 36.1 (targetSdk 36). Instala Android SDK Platform 36.1 y Build-Tools 36.0.0 desde Tools > SDK Manager. Usa el JDK integrado de Panda 2 (17 o superior compatible con Gradle); ya no se exige Java 25. Consulta COMPATIBILIDAD_PANDA2.md en la carpeta Lab5 para el paso a paso. No aceptes actualizar AGP a 9.3 si trabajarás con Panda 2.
+6. En la rama Version_panda3 conserva AGP 9.1.1, Gradle 9.3.1 y compileSdk 36.1 (targetSdk 36). Instala Android SDK Platform 36.1 y Build-Tools 36.0.0 desde Tools > SDK Manager. Usa el JDK integrado de Panda 3 (17 o superior compatible con Gradle); no se exige Java 25. Consulta COMPATIBILIDAD_PANDA3.md en la carpeta Lab5 para el paso a paso. No aceptes actualizar AGP a 9.3 si trabajarás con Panda 3.
 7. Si falta el SDK, abre **Tools > SDK Manager** y descarga el que indique compileSdk. El mínimo de estos proyectos es Android 14/API 34, como tus plantillas: un emulador inferior no sirve.
 8. Arriba elige la configuración **app** y un dispositivo compatible. Para tu Samsung A55, activa las opciones de desarrollador y depuración USB, conecta el cable y acepta su autorización.
 9. Pulsa el triángulo **Run**. Las tres prácticas tienen identificadores diferentes y pueden estar instaladas juntas.

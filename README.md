@@ -2,9 +2,9 @@
 
 Abre **cada carpeta de proyecto por separado** en Android Studio. No abras Lab5 como si fuera un solo proyecto Gradle.
 
-## Rama para Android Studio Panda 2
+## Rama para Android Studio Panda 3
 
-Esta rama, `Version_panda2`, usa AGP 9.1.1, Gradle 9.3.1 y Android SDK 36.1 (targetSdk 36). No exige Java 25. La rama `main` conserva la configuración original. Lee [COMPATIBILIDAD_PANDA2.md](COMPATIBILIDAD_PANDA2.md) antes de abrir las prácticas en el laboratorio.
+Esta rama, `Version_panda3`, usa AGP 9.1.1, Gradle 9.3.1 y Android SDK 36.1 (targetSdk 36), compatibles con Panda 3 / 2025.3.3. No exige Java 25 ni SDK 37. Conserva la configuración ya verificada de `Version_panda2`; no fue necesario cambiar las aplicaciones para Panda 3. Las ramas `main` y `Version_panda2` permanecen intactas. Lee [COMPATIBILIDAD_PANDA3.md](COMPATIBILIDAD_PANDA3.md) antes de abrir las prácticas en el laboratorio.
 
 | Proyecto | Tema y pantallas | Almacenamiento | Avisos |
 |---|---|---|---|
