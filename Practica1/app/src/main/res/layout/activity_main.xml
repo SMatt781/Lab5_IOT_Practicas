@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/lab_surface">
+  <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="Agenda de eventos" android:background="#FFFFFF" />
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="16dp">
+    <TextView style="@style/LabHeading" android:text="Tus fechas importantes" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <TextView android:id="@+id/statusText" style="@style/LabBody" android:text="Configura los permisos" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/permissionButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Permitir notificaciones" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/precisionButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Configurar avisos exactos (opcional)" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/calendarButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ver calendario mensual" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/addButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Añadir evento" />
+    <TextView android:id="@+id/emptyText" style="@style/LabBody" android:text="No hay eventos programados" android:paddingTop="8dp" android:paddingBottom="8dp" />
+  </LinearLayout>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:clipToPadding="false" />
+</LinearLayout>

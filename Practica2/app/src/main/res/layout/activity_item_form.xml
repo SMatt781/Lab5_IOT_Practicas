@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/lab_surface">
+  <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="Insumo" android:background="#FFFFFF" />
+  <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+      <TextView style="@style/LabHeading" android:text="Datos del insumo" android:paddingTop="8dp" android:paddingBottom="8dp" />
+      <com.google.android.material.textfield.TextInputLayout android:id="@+id/nameEditLayout" style="@style/LabInput" android:hint="Nombre">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/nameEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences" android:maxLength="80" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout android:id="@+id/quantityEditLayout" style="@style/LabInput" android:hint="Cantidad disponible">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/quantityEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout android:id="@+id/minimumEditLayout" style="@style/LabInput" android:hint="Stock mínimo">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/minimumEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout android:id="@+id/noteEditLayout" style="@style/LabInput" android:hint="Nota opcional">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/noteEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textMultiLine" android:maxLength="300" android:minLines="2" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <TextView style="@style/LabBody" android:text="Se considera stock bajo cuando la cantidad es menor o igual al mínimo. El aviso se envía al entrar en esa condición, no con cada pulsación." android:paddingTop="8dp" android:paddingBottom="8dp" />
+      <com.google.android.material.button.MaterialButton android:id="@+id/saveButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Guardar insumo" />
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</LinearLayout>

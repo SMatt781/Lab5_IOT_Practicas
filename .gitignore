@@ -1,0 +1,15 @@
+# Generados y configuraciones de cada equipo
+**/.gradle/
+**/.idea/
+**/build/
+**/local.properties
+**/*.iml
+**/.externalNativeBuild/
+**/.cxx/
+captures/
+.DS_Store
+**/*.jks
+**/*.keystore
+**/.env
+**/.env.*
+/PB4-IOT-2026-1.pdf

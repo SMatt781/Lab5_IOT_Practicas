@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/lab_surface">
+  <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="Mi presupuesto" android:background="#FFFFFF" />
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+      <com.google.android.material.button.MaterialButton android:id="@+id/previousButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="‹" />
+      <TextView android:id="@+id/monthText" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="19sp" android:gravity="center" />
+      <com.google.android.material.button.MaterialButton android:id="@+id/nextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+    </LinearLayout>
+    <TextView android:id="@+id/summaryText" style="@style/LabHeading" android:text="Resumen mensual" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/budgetEditLayout" style="@style/LabInput" android:hint="Presupuesto del mes (S/)">
+      <com.google.android.material.textfield.TextInputEditText android:id="@+id/budgetEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/budgetButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Guardar presupuesto" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/permissionButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Permitir notificaciones" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/addButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Registrar gasto" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+      <com.google.android.material.button.MaterialButton android:id="@+id/exportButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Exportar JSON" />
+      <com.google.android.material.button.MaterialButton android:id="@+id/importButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Importar JSON" />
+    </LinearLayout>
+    <TextView android:id="@+id/emptyText" style="@style/LabBody" android:text="No hay gastos en este mes" android:paddingTop="8dp" android:paddingBottom="8dp" />
+  </LinearLayout>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:clipToPadding="false" android:padding="12dp" />
+</LinearLayout>

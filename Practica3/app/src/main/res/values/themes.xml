@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Base.Theme.Lab5_practica3" parent="Theme.Material3.Light.NoActionBar">
+    <item name="colorPrimary">@color/lab_primary</item>
+    <item name="colorSecondary">@color/lab_primary</item>
+    <item name="android:fontFamily">sans</item>
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:windowLightNavigationBar">true</item>
+    <item name="android:windowBackground">@color/lab_surface</item>
+  </style>
+  <style name="Theme.Lab5_practica3" parent="Base.Theme.Lab5_practica3" />
+</resources>

@@ -1,0 +1,16 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    alias(libs.plugins.android.application) apply false
+}
+
+// Opcional: evita generar compilados en OneDrive. No cambia la carpeta del proyecto.
+def labLocalProperties = new Properties()
+def labLocalFile = rootProject.file('local.properties')
+if (labLocalFile.exists()) {
+    labLocalFile.withInputStream { labLocalProperties.load(it) }
+}
+def labBuildRoot = labLocalProperties.getProperty('lab5.buildRoot')
+if (labBuildRoot) {
+    layout.buildDirectory.set(file(labBuildRoot + '/root'))
+    subprojects { layout.buildDirectory.set(file(labBuildRoot + '/' + project.name)) }
+}

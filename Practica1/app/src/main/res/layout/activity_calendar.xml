@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/lab_surface">
+  <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="Calendario mensual" android:background="#FFFFFF" />
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+      <com.google.android.material.button.MaterialButton android:id="@+id/previousButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="‹" />
+      <TextView android:id="@+id/monthText" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="19sp" />
+      <com.google.android.material.button.MaterialButton android:id="@+id/nextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:text="Lun" android:textSize="13sp" android:paddingVertical="8dp" />
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:text="Mar" android:textSize="13sp" android:paddingVertical="8dp" />
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:text="Mié" android:textSize="13sp" android:paddingVertical="8dp" />
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:text="Jue" android:textSize="13sp" android:paddingVertical="8dp" />
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:text="Vie" android:textSize="13sp" android:paddingVertical="8dp" />
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:text="Sáb" android:textSize="13sp" android:paddingVertical="8dp" />
+      <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:text="Dom" android:textSize="13sp" android:paddingVertical="8dp" />
+    </LinearLayout>
+    <GridLayout android:id="@+id/calendarGrid" android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="7" />
+    <TextView style="@style/LabBody" android:text="● Morado: anual   ● Naranja: único" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <TextView android:id="@+id/selectedText" style="@style/LabHeading" android:text="Desde la fecha seleccionada" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <TextView android:id="@+id/emptyText" style="@style/LabBody" android:text="No hay eventos desde esta fecha" android:paddingTop="8dp" android:paddingBottom="8dp" />
+  </LinearLayout>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp" android:clipToPadding="false" />
+</LinearLayout>

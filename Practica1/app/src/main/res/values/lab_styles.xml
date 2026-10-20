@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="lab_primary">#006C61</color>
+  <color name="lab_surface">#F5F7FA</color>
+  <color name="lab_text">#172337</color>
+  <color name="lab_muted">#526171</color>
+  <color name="lab_high">#8B3FA0</color>
+  <color name="lab_normal">#C16B00</color>
+  <color name="lab_error">#BA1A1A</color>
+  <style name="LabHeading">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">22sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/lab_text</item>
+  </style>
+  <style name="LabBody">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/lab_muted</item>
+  </style>
+  <style name="LabInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">12dp</item>
+  </style>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+    <TextView android:id="@+id/nameText" style="@style/LabHeading" android:text="Nombre" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <TextView android:id="@+id/stockText" style="@style/LabBody" android:text="Cantidad / mínimo" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <TextView android:id="@+id/statusText" style="@style/LabBody" android:text="Estado" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <TextView android:id="@+id/noteText" style="@style/LabBody" android:text="Nota" android:paddingTop="8dp" android:paddingBottom="8dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+      <com.google.android.material.button.MaterialButton android:id="@+id/removeButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="− 1" />
+      <com.google.android.material.button.MaterialButton android:id="@+id/addButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="+ 1" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+      <com.google.android.material.button.MaterialButton android:id="@+id/editButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Editar" />
+      <com.google.android.material.button.MaterialButton android:id="@+id/deleteButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Eliminar" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/testButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Probar aviso de este insumo" />
+  </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
