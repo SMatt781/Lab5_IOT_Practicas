@@ -2,7 +2,22 @@
 
 Fecha de las pruebas: 20/10/2026. Las comprobaciones se realizaron localmente antes de publicar este repositorio; no se modificó IoTelito.
 
-## Compilaciones y pruebas
+## Comprobación de la rama Version_panda2
+
+El 20/10/2026 se repitieron las compilaciones con AGP 9.1.1, Gradle 9.3.1, compileSdk 36.1 y targetSdk 36. Se comprobó que los tres proyectos compilan y ejecutan sus pruebas unitarias usando Temurin JDK 17.0.19, sin exigir Java 25. Agenda también compiló inicialmente con el JDK 25 de esta PC, y luego se recompiló y probó con Java 17 forzando la repetición de las tareas.
+
+| Proyecto | assembleDebug con Java 17 | Unitarias | Fallos/errores | APK de pruebas Android generado |
+|---|---|---:|---:|---|
+| Practica1 - Agenda | Correcto | 9 | 0 | Sí |
+| Practica2 - Inventario | Correcto | 9 | 0 | Sí |
+| Practica3 - Gastos | Correcto | 13 | 0 | Sí |
+| Total | 3 APK | 31 | 0 | 3 APK de pruebas |
+
+Se inspeccionaron los manifiestos empaquetados: los tres APK declaran minSdk 34 y targetSdk 36. No hubo cambios en los archivos Java/XML de app/src respecto de main.
+
+**Límites de esta comprobación:** los APK de pruebas instrumentadas se compilaron, pero las 21 pruebas instrumentadas de la versión original no se volvieron a ejecutar con esta configuración. Tampoco se abrió el IDE Panda 2, que no está instalado en esta PC, ni se probó esta rama en el A55. La compatibilidad de herramientas se basa en los requisitos oficiales y las compilaciones anteriores; comprueba la sincronización en el laboratorio siguiendo COMPATIBILIDAD_PANDA2.md.
+
+## Compilaciones y pruebas originales de main
 
 | Proyecto | assembleDebug | Unitarias | Instrumentadas (Android 14/API 34, Pixel 4) | Fallos |
 |---|---|---:|---:|---:|

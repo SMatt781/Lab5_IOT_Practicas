@@ -2,6 +2,10 @@
 
 Abre **cada carpeta de proyecto por separado** en Android Studio. No abras Lab5 como si fuera un solo proyecto Gradle.
 
+## Rama para Android Studio Panda 2
+
+Esta rama, `Version_panda2`, usa AGP 9.1.1, Gradle 9.3.1 y Android SDK 36.1 (targetSdk 36). No exige Java 25. La rama `main` conserva la configuración original. Lee [COMPATIBILIDAD_PANDA2.md](COMPATIBILIDAD_PANDA2.md) antes de abrir las prácticas en el laboratorio.
+
 | Proyecto | Tema y pantallas | Almacenamiento | Avisos |
 |---|---|---|---|
 | [Practica1](Practica1/GUIA_PASO_A_PASO.md) | Agenda: lista, formulario y calendario mensual | Lista JSON en SharedPreferences | Fechas programadas, únicos DEFAULT/anuales HIGH |

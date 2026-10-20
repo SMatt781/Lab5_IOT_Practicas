@@ -5,13 +5,15 @@ plugins {
 android {
     namespace 'com.example.lab5_practica1'
     compileSdk {
-        version = release(37)
+        version = release(36) {
+            minorApiLevel = 1
+        }
     }
 
     defaultConfig {
         applicationId "com.example.lab5_practica1"
         minSdk 34
-        targetSdk 37
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
